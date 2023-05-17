@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solarly</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap latest css and js -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar_m">
+    <div class="container-fluid">
+      <a class="navbar-brand ps-2" href="./index.html">Solarly</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./category.html">Solar Panels</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./category.html">Inverters</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./category.html">Structure Kits</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./category.html">Electrical Kits</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./category.html">Other Services</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto pe-2">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="row ps-2">
+    <div class="col-lg-8 col-md-12 col-sm-12">
+      <div class="container-fluid pt-3">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="big_pic.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="big_pic.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="big_pic.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-lg-4 col-md-12 col-sm-12">
+      <div class="container-fluid pt-3">
+        <div class="card " style="min-height: 30rem;">
+          <!-- <h5 class="card-header text-center">Quick Shop</h5> -->
+          <div class="card-body">
+            <h4 class="card-title text-center">Make Your Own Plant</h4>
+            <div class="input-group">
+              <select class="form-select" id="typeSelect">
+                <option selected disabled>Select One</option>
+                <option value="type1">Rooftop Area</option>
+                <option value="type2">Capacity</option>
+                <option value="type3">Budget</option>
+              </select>
+              <input type="text" class="form-control" aria-label="Text input with dropdown button">
+            </div>
+            <div class="input-group pt-2">
+              <select class="form-select" id="typeSelect1">
+                <option selected disabled>Select State</option>
+                <option value="type1">State</option>
+                <option value="type2">State</option>
+                <option value="type3">State</option>
+              </select>
+              <select class="form-select" id="typeSelect2">
+                <option selected disabled>Type of Customer</option>
+                <option value="type1">Residental</option>
+                <option value="type2">Industrial</option>
+                <option value="type3">Institutional</option>
+              </select>
+            </div>
+            <div class="input-group pt-2">
+              <input type="number" class="form-control" aria-label="Text input with dropdown button">
+            </div>
+
+            <div class="text-center pt-3">
+              <button type="button" class="btn theme_btn">Calculate</button>
+              <hr>
+
+              <h4 class="text-center">Quick Shop</h4>
+
+              <h6 class="card-title pt-3">Choose From Kits</h6>
+              <select class="form-select" id="typeSelect2">
+                <option selected disabled>Choose a kit</option>
+                <option value="type1">Solar Kits</option>
+                <option value="type2">Electrical Kits</option>
+                <option value="type3">Structure Kits</option>
+              </select>
+
+              <br>
+              <button class="btn theme_btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row ps-2 pt-5">
+    <div class="col-12">
+
+
+      <div class="container-fluid pb-3">
+
+        <h3>Solar Panels</h3>
+        <div class="row text-center pt-2 pb-2">
+          <div class="col-6 col-lg-2 col-md-3 col-sm-6 pt-2">
+            <div class="card">
+              <img src="blog_pic.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Product Name</h5>
+                <p class="card-text">Product details will go here</p>
+              </div>
+              <div class="card-footer bp">
+                <p class="text-muted">₹30,000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-2 col-md-3 col-sm-6 pt-2">
+            <div class="card">
+              <img src="blog_pic.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Product Name</h5>
+                <p class="card-text">Product details will go here</p>
+              </div>
+              <div class="card-footer bp">
+                <p class="text-muted">₹30,000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-2 col-md-3 col-sm-6 pt-2">
+            <div class="card">
+              <img src="blog_pic.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Product Name</h5>
+                <p class="card-text">Product details will go here</p>
+              </div>
+              <div class="card-footer bp">
+                <p class="text-muted">₹30,000</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-6 col-lg-2 col-md-3 col-sm-6 pt-2">
+            <div class="card">
+              <img src="blog_pic.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Product Name</h5>
+                <p class="card-text">Product details will go here</p>
+              </div>
+              <div class="card-footer bp">
+                <p class="text-muted">₹30,000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-2 col-md-3 col-sm-6 pt-2">
+            <div class="card">
+              <img src="blog_pic.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Product Name</h5>
+                <p class="card-text">Product details will go here</p>
+              </div>
+              <div class="card-footer bp">
+                <p class="text-muted">₹30,000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-2 col-md-3 col-sm-6 pt-2">
+            <div class="card">
+              <img src="blog_pic.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Product Name</h5>
+                <p class="card-text">Product details will go here</p>
+              </div>
+              <div class="card-footer bp">
+                <p class="text-muted">₹30,000</p>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+        <hr>
+      </div>
+
+      <div class="container-fluid pb-3">
+        <h3>Inverters</h3>
+        <div class="row text-center pt-2 pb-2">
+
+          <div class="col-6 col-lg-2 col-md-3 col-sm-6 pt-2">
+            <div class="card">
+              <img src="blog_pic.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Product Name</h5>
+                <p class="card-text">Product details will go here</p>
+              </div>
+              <div class="card-footer bp">
+                <p class="text-muted">₹30,000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-2 col-md-3 col-sm-6 pt-2">
+            <div class="card">
+              <img src="blog_pic.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Product Name</h5>
+                <p class="card-text">Product details will go here</p>
+              </div>
+              <div class="card-footer bp">
+                <p class="text-muted">₹30,000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-2 col-md-3 col-sm-6 pt-2">
+            <div class="card">
+              <img src="blog_pic.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Product Name</h5>
+                <p class="card-text">Product details will go here</p>
+              </div>
+              <div class="card-footer bp">
+                <p class="text-muted">₹30,000</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-6 col-lg-2 col-md-3 col-sm-6 pt-2">
+            <div class="card">
+              <img src="blog_pic.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Product Name</h5>
+                <p class="card-text">Product details will go here</p>
+              </div>
+              <div class="card-footer bp">
+                <p class="text-muted">₹30,000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-2 col-md-3 col-sm-6 pt-2">
+            <div class="card">
+              <img src="blog_pic.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Product Name</h5>
+                <p class="card-text">Product details will go here</p>
+              </div>
+              <div class="card-footer bp">
+                <p class="text-muted">₹30,000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-2 col-md-3 col-sm-6 pt-2">
+            <div class="card">
+              <img src="blog_pic.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Product Name</h5>
+                <p class="card-text">Product details will go here</p>
+              </div>
+              <div class="card-footer bp">
+                <p class="text-muted">₹30,000</p>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+        <hr>
+      </div>
+
+      <div class="container-fluid pb-3">
+
+        <h3>Structure Kits</h3>
+        <div class="row text-center pt-2 pb-2">
+          <div class="col-6 col-lg-2 col-md-3 col-sm-6 pt-2">
+            <div class="card">
+              <img src="blog_pic.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Product Name</h5>
+                <p class="card-text">Product details will go here</p>
+              </div>
+              <div class="card-footer bp">
+                <p class="text-muted">₹30,000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-2 col-md-3 col-sm-6 pt-2">
+            <div class="card">
+              <img src="blog_pic.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Product Name</h5>
+                <p class="card-text">Product details will go here</p>
+              </div>
+              <div class="card-footer bp">
+                <p class="text-muted">₹30,000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-2 col-md-3 col-sm-6 pt-2">
+            <div class="card">
+              <img src="blog_pic.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Product Name</h5>
+                <p class="card-text">Product details will go here</p>
+              </div>
+              <div class="card-footer bp">
+                <p class="text-muted">₹30,000</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-6 col-lg-2 col-md-3 col-sm-6 pt-2">
+            <div class="card">
+              <img src="blog_pic.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Product Name</h5>
+                <p class="card-text">Product details will go here</p>
+              </div>
+              <div class="card-footer bp">
+                <p class="text-muted">₹30,000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-2 col-md-3 col-sm-6 pt-2">
+            <div class="card">
+              <img src="blog_pic.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Product Name</h5>
+                <p class="card-text">Product details will go here</p>
+              </div>
+              <div class="card-footer bp">
+                <p class="text-muted">₹30,000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-2 col-md-3 col-sm-6 pt-2">
+            <div class="card">
+              <img src="blog_pic.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Product Name</h5>
+                <p class="card-text">Product details will go here</p>
+              </div>
+              <div class="card-footer bp">
+                <p class="text-muted">₹30,000</p>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+        <hr>
+      </div>
+
+      <div class="container-fluid pb-3">
+        <h3>Electrical Kits</h3>
+        <div class="row text-center pt-2 pb-2">
+
+          <div class="col-6 col-lg-2 col-md-3 col-sm-6 pt-2">
+            <div class="card">
+              <img src="blog_pic.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Product Name</h5>
+                <p class="card-text">Product details will go here</p>
+              </div>
+              <div class="card-footer bp">
+                <p class="text-muted">₹30,000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-2 col-md-3 col-sm-6 pt-2">
+            <div class="card">
+              <img src="blog_pic.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Product Name</h5>
+                <p class="card-text">Product details will go here</p>
+              </div>
+              <div class="card-footer bp">
+                <p class="text-muted">₹30,000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-2 col-md-3 col-sm-6 pt-2">
+            <div class="card">
+              <img src="blog_pic.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Product Name</h5>
+                <p class="card-text">Product details will go here</p>
+              </div>
+              <div class="card-footer bp">
+                <p class="text-muted">₹30,000</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-6 col-lg-2 col-md-3 col-sm-6 pt-2">
+            <div class="card">
+              <img src="blog_pic.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Product Name</h5>
+                <p class="card-text">Product details will go here</p>
+              </div>
+              <div class="card-footer bp">
+                <p class="text-muted">₹30,000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-2 col-md-3 col-sm-6 pt-2">
+            <div class="card">
+              <img src="blog_pic.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Product Name</h5>
+                <p class="card-text">Product details will go here</p>
+              </div>
+              <div class="card-footer bp">
+                <p class="text-muted">₹30,000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-2 col-md-3 col-sm-6 pt-2">
+            <div class="card">
+              <img src="blog_pic.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Product Name</h5>
+                <p class="card-text">Product details will go here</p>
+              </div>
+              <div class="card-footer bp">
+                <p class="text-muted">₹30,000</p>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    </div>
+
+  </div>
+
+
+
+  <footer>
+    <div class="contaier pt-5" style="background-color: #053d56; color: antiquewhite;">
+      <div class="d-flex flex-wrap flex-column flex-sm-row py-5">
+        <div class="col-lg-4 col-sm-12 ps-5 pt-5">
+          <h4>Solarly Logo</h4>
+          <h6>Subscribe to our Newsletter</h6>
+          <p class="">Get Product updates, Company News and More</p>
+          <a href="" class="btn subscribe_btn">Subscribe</a>
+        </div>
+        <div class="col-lg-2 col-sm-12 text-start ps-5 pt-5">
+          <h5>Socials</h5>
+          <p class="pt-2">
+            Instagram
+            <br>
+            <br>
+            Twitter
+            <br>
+
+            <br>
+            Facebook
+            <br>
+            <br>
+            Youtube
+            <br>
+            <br>
+            Linkedin
+          </p>
+        </div>
+        <div class="col-lg-2 col-sm-12 text-start ps-5 pt-5 ">
+          <h5>Office Addresses</h5>
+          <p class="pt-2">
+            Vadodara
+            <br>
+            Lorem ipsum dolor, sit amet <br> consectetur adipisiue, enim omnis odit
+          </p>
+        </div>
+        <div class="col-lg-2 col-sm-12 text-start ps-5 pt-5">
+          <h5>Contact Us</h5>
+          <p class="pt-2">
+            Name 1
+            <br>
+            Phone Number: 1234567890
+            <br>
+            email: abcd@email.com
+            <br>
+            <br>
+            Name 2
+            <br>
+            Phone Number: 1234567890
+            <br>
+            email: abcd@email.com
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+</body>
+
+
+
+
+</html>

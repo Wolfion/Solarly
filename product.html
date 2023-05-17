@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solarly</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- bootstrap latest css and js -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar_m">
+        <div class="container-fluid">
+            <a class="navbar-brand ps-2" href="./index.html">Solarly</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav me-auto">
+                    <!-- <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="./category.html">Solar Panels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./category.html">Inverters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./category.html">Structure Kits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./category.html">Electrical Kits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./category.html">Other Services</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-aut2 pe-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar_s">
+        <div class="container-fluid">
+            <div class="bc" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="./category.html">Category</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                </ol>
+            </div>
+            <form class="d-flex" role="search">
+                <input class="form-control search_bar me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn search_btn" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="row ps-2 pt-5 pe-2 pb-5">
+        <div class="col-lg-3 col-md-4 col-sm-12 offset-lg-1">
+            <div class="card border-0">
+                <img src="blog_pic.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <img src="blog_pic.png" class="pb-1" alt="" style="width: 3rem;">
+                    <img src="blog_pic.png" class="pb-1" alt="" style="width: 3rem;">
+                    <img src="blog_pic.png" class="pb-1" alt="" style="width: 3rem;">
+                    <img src="blog_pic.png" class="pb-1" alt="" style="width: 3rem;">
+                    <img src="blog_pic.png" class="pb-1" alt="" style="width: 3rem;">
+                    <img src="blog_pic.png" class="pb-1" alt="" style="width: 3rem;">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="product_details">
+            <h4>Product Name Goes Here</h4>
+            <p><span class="text-muted">Category:&nbsp;&nbsp;</span>Inverter</p>
+            <p><span class="text-muted">Type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Off Grid</p>
+            <p><span class="text-muted">Rating:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>5 KW</p>
+            <h6>Starting Price: $100</h6>
+            <hr>
+            <h6>Quantity</h6>
+            <div class="input-group mb-3" style="max-width: 10rem;">
+                <button class="btn qty_btn" type="button" id="button-addon1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                </button>
+                <input type="text" class="form-control text-center" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" value="1">
+                <button class="btn qty_btn" type="button" id="button-addon1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                </button>
+            </div>  
+            <button type="button" class="btn inquiry_btn">Inquire Now</button>
+        </div>
+
+
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-12 product_company_card">
+            <div class="card">
+                <div class="card-body">
+                    <h5>Company Name</h5>
+                    <p><span class="fw-bold">Founded In:</span> 1980</p>
+                    <p><span class="fw-bold">Country:</span> Germany</p>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <div class="row ps-2 pt-2 pe-2">
+        <div class="col-lg-6 col-md-11 col-sm-12 offset-lg-1 offset-md-1">
+            <h4>Product Description</h4>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officiis necessitatibus veniam aspernatur vero recusandae, perferendis, error quod adipisci enim tempore, exercitationem ipsa in non at ex dolorum reprehenderit! Natus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Doloribus quos, praesentium id fuga dolorum atque. Distinctio quod aperiam, et nesciunt ad vitae exercitationem neque eius blanditiis soluta consectetur pariatur perspiciatis?
+                Lorem ipsum, <br> dolor sit amet consectetur adipisicing elit. Laboriosam deleniti praesentium esse veniam quam error, asperiores nihil a vero fuga ipsum nemo excepturi ullam fugiat dolor libero reprehenderit magnam quas.
+                
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, possimus. Velit numquam tempore possimus ipsum molestias minus perspiciatis blanditiis enim, reiciendis dolore ratione incidunt qui beatae inventore quod ipsa ut.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, <br> <br> officia sit. Deserunt hic veniam a exercitationem, voluptatibus cupiditate harum eum quo qui praesentium alias numquam nostrum, vel omnis. Autem, veniam?
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, possimus. Velit numquam tempore possimus ipsum molestias minus perspiciatis blanditiis enim, reiciendis dolore ratione incidunt qui beatae inventore quod ipsa ut.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, <br> <br> officia sit. Deserunt hic veniam a exercitationem, voluptatibus cupiditate harum eum quo qui praesentium alias numquam nostrum, vel omnis. Autem, veniam?
+
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, possimus. Velit numquam tempore possimus ipsum molestias minus perspiciatis blanditiis enim, reiciendis dolore ratione incidunt qui beatae inventore quod ipsa ut.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam,  officia sit. Deserunt hic veniam a exercitationem, voluptatibus cupiditate harum eum quo qui praesentium alias numquam nostrum, vel omnis. Autem, veniam?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, possimus. Velit numquam tempore possimus ipsum molestias minus perspiciatis blanditiis enim, reiciendis dolore ratione incidunt qui beatae inventore quod ipsa ut.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, <br> <br> officia sit. Deserunt hic veniam a exercitationem, voluptatibus cupiditate harum eum quo qui praesentium alias numquam nostrum, vel omnis. Autem, veniam?
+            </p>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <tr>
+                        <th>Generic Details</th>
+                        <th>Additional Details</th>
+                      </tr>
+                      <tr>
+                        <td>Width</td>
+                        <td>Additional info about width</td>
+                      </tr>
+                      <tr>
+                        <td>Height</td>
+                        <td>Additional info about height</td>
+                      </tr>
+                      <tr>
+                        <td>Rating</td>
+                        <td>Additional info about rating</td>
+                      </tr>
+                      <tr>
+                        <td>Color</td>
+                        <td>Additional info about color</td>
+                      </tr>
+                      <tr>
+                        <td>Weight</td>
+                        <td>Additional info about weight</td>
+                      </tr>
+                      <tr>
+                        <td>Material</td>
+                        <td>Additional info about material</td>
+                      </tr>
+                      <tr>
+                        <td>Price</td>
+                        <td>Additional info about price</td>
+                      </tr>
+                      <tr>
+                        <td>Availability</td>
+                        <td>Additional info about availability</td>
+                      </tr>
+                      <tr>
+                        <td>Manufacturer</td>
+                        <td>Additional info about manufacturer</td>
+                      </tr>
+                      <tr>
+                        <td>Country of Origin</td>
+                        <td>Additional info about country of origin</td>
+                      </tr>
+                    </table>
+                </table>
+              </div>
+            <hr>
+        </div>
+    </div>
+    
+    <div class="row ps-2 pt-5 pe-2 pb-4">
+        <div class="col-11 offset-lg-1">
+            <h4 class="related_products_h">Related Products</h4>
+            <div class="row related_products text-center">
+                <div class="col-6 col-lg-2 col-md-3 col-sm-6 related_product_col">
+                    <a href="#">
+                        <div class="card">
+                            <img src="blog_pic.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Product Name</h5>
+                                <p class="card-text">Product details will go here</p>
+                            </div>
+                            <div class="card-footer bp">
+                                <p class="text-muted">₹ 30,000</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-lg-2 col-md-3 col-sm-6 related_product_col">
+                    <a href="#">
+                        <div class="card">
+                            <img src="blog_pic.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Product Name</h5>
+                                <p class="card-text">Product details will go here</p>
+                            </div>
+                            <div class="card-footer bp">
+                                <p class="text-muted">₹ 30,000</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-lg-2 col-md-3 col-sm-6 related_product_col">
+                    <a href="#">
+                        <div class="card">
+                            <img src="blog_pic.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Product Name</h5>
+                                <p class="card-text">Product details will go here</p>
+                            </div>
+                            <div class="card-footer bp">
+                                <p class="text-muted">₹ 30,000</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-lg-2 col-md-3 col-sm-6 related_product_col">
+                    <a href="#">
+                        <div class="card">
+                            <img src="blog_pic.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Product Name</h5>
+                                <p class="card-text">Product details will go here</p>
+                            </div>
+                            <div class="card-footer bp">
+                                <p class="text-muted">₹ 30,000</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-lg-2 col-md-3 col-sm-6 related_product_col">
+                    <a href="#">
+                        <div class="card">
+                            <img src="blog_pic.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Product Name</h5>
+                                <p class="card-text">Product details will go here</p>
+                            </div>
+                            <div class="card-footer bp">
+                                <p class="text-muted">₹ 30,000</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="contaier pt-5" style="background-color: #053d56; color: antiquewhite;">
+            <div class="d-flex flex-wrap flex-column flex-sm-row py-5">
+                <div class="col-lg-4 col-sm-12 ps-5 pt-5">
+                    <h4>Solarly Logo</h4>
+                    <h6>Subscribe to our Newsletter</h6>
+                    <p class="">Get Product updates, Company News and More</p>
+                    <a href="" class="btn subscribe_btn">Subscribe</a>
+                </div>
+                <div class="col-lg-2 col-sm-12 text-start ps-5 pt-5">
+                    <h5>Socials</h5>
+                    <p class="pt-2">
+                        Instagram
+                        <br>
+                        <br>
+                        Twitter
+                        <br>
+                        <br>
+                        Facebook
+                        <br>
+                        <br>
+                        Youtube
+                        <br>
+                        <br>
+                        Linkedin
+                    </p>
+                </div>
+                <div class="col-lg-2 col-sm-12 text-start ps-5 pt-5 ">
+                    <h5>Office Addresses</h5>
+                    <p class="pt-2">
+                        Vadodara
+                        <br>
+                        Lorem ipsum dolor, sit amet  <br> consectetur adipisiue, enim omnis odit
+                    </p>
+                </div>
+                <div class="col-lg-2 col-sm-12 text-start ps-5 pt-5">
+                    <h5>Contact Us</h5>
+                    <p class="pt-2">
+                        Name 1
+                        <br>
+                        Phone Number: 1234567890
+                        <br>
+                        email: abcd@email.com
+                        <br>
+                        <br>
+                        Name 2
+                        <br>
+                        Phone Number: 1234567890
+                        <br>
+                        email: abcd@email.com
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+
+</body>
+
+</html>
